@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iara & Diego – Hochzeitseinladung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Garamond", "Georgia", "Times New Roman", serif;
+      background-color: #89A096;
+      color: #fff;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .image-landscape {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 30px;
+      background: #ccc;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .form-section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #89A096;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .image-portrait {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 40px auto 20px;
+      display: block;
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IARA & DIEGO – 14.06.2025</h1>
+    <img class="image-landscape" src="placeholder-landscape.jpg" alt="Ort des Festes">
+  </header>
+
+  <main>
+    <p>Ein Sommerfest, um uns drei und uns alle zu feiern! Ein gemütliches Beisammensein im kleinen Rahmen mit euch, unseren liebsten Freunden.</p>
+    <p>Aus Platzgründen können wir nur die namentlich auf der Einladung genannte/n Person/en bei uns begrüssen. Es ist daher leider nicht möglich zusätzliche Personen einzuladen oder mitzubringen. Dafür möchten wir uns in aller Form entschuldigen und bitten um euer Verständnis.</p>
+    <p>Wir freuen uns aber umso mehr darauf, euch an diesem besonderen Tag dabei zu haben!</p>
+
+    <h3>Hier findet ihr alle wichtigen Informationen:</h3>
+    <p><strong>Ort:</strong><br>
+    In Neggio im Haus der Urgrossmutter von Iara (daher die begrenzten Platzverhältnisse).<br>
+    Adresse: Via Giuseppe Soldati 15, 6991 Neggio<br>
+    <a href="https://maps.app.goo.gl/qev6CnhPAGPG5B877" target="_blank" style="color: #fff; text-decoration: underline;">Google Maps Link</a></p>
+
+    <p><strong>Datum & Zeit:</strong><br>
+    Samstag, 14.06.2025 ab circa 13:30 Uhr bis die Sterne müde werden...</p>
+
+    <p><strong>Programm:</strong><br>
+    Der einzige Fixpunkt ist der Apéro (ab ca. 18:00Uhr) mit anschliessendem Nachtessen im Garten...</p>
+
+    <p><strong>Unterkunft:</strong><br>
+    In der Region gibt es einige Hotels und Bed&Breakfasts, bspw. in Agno oder Caslano...</p>
+
+    <p><strong>Anreise (von Zürich):</strong><br>
+    ÖV: ca. 2h30min, Auto: ca. 2h45min, Fahrrad: ca. 18h, Zu Fuss: ca. 90h</p>
+
+    <p><strong>Mitnehmen:</strong><br>
+    Badesachen und was ihr sonst so braucht für ein gemütliches Wochenende im Tessin</p>
+
+    <p><strong>Dresscode:</strong><br>
+    Sommerlich léger (bitte keine Funktionskleider)</p>
+
+    <div class="form-section">
+      <h3>Angaben der Gäste:</h3>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="essen">Essen</label>
+        <select id="essen" name="essen" required>
+          <option value="vegetarisch">Vegetarisch</option>
+          <option value="nicht-vegetarisch">Nicht-vegetarisch</option>
+        </select>
+
+        <label for="anreise">Angedachte Anreise-Art</label>
+        <input type="text" id="anreise" name="anreise" required>
+
+        <label for="sonntag">Sonntag dabei?</label>
+        <select id="sonntag" name="sonntag" required>
+          <option value="ja">Ja</option>
+          <option value="nein">Nein</option>
+          <option value="unsicher">Noch unsicher</option>
+        </select>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </div>
+
+    <img class="image-portrait" src="placeholder-portrait.jpg" alt="Das Paar">
+  </main>
+
+  <footer>
+    <p>Wir freuen uns auf euch! ♥</p>
+  </footer>
+</body>
+</html>
