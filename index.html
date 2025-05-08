@@ -16,7 +16,7 @@
 
     header {
       text-align: center;
-      padding: 40px 0;
+      padding: 40px 0 0 0;
     }
 
     header h1 {
@@ -25,7 +25,7 @@
     }
 
     .image-landscape {
-      width: 100%;
+      width: 800px;
       max-height: 400px;
       object-fit: cover;
       display: block;
@@ -36,6 +36,10 @@
     main {
       max-width: 800px;
       margin: 0 auto;
+    }
+
+    p, label, option, select, input {
+        font-size: large;
     }
 
     footer {
@@ -57,7 +61,7 @@
 
     label {
       margin-top: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
 
     input, select, textarea {
@@ -79,8 +83,7 @@
     }
 
     .image-portrait {
-      width: 100%;
-      max-width: 300px;
+      max-width: 800px;
       height: auto;
       margin: 40px auto 20px;
       display: block;
@@ -91,7 +94,7 @@
 <body>
   <header>
     <h1>IARA & DIEGO – 14.06.2025</h1>
-    <img class="image-landscape" src="placeholder-landscape.jpg" alt="Ort des Festes">
+    <img class="image-landscape" src="images/neggio.jpg" alt="Neggio">
   </header>
 
   <main>
@@ -99,29 +102,59 @@
     <p>Aus Platzgründen können wir nur die namentlich auf der Einladung genannte/n Person/en bei uns begrüssen. Es ist daher leider nicht möglich zusätzliche Personen einzuladen oder mitzubringen. Dafür möchten wir uns in aller Form entschuldigen und bitten um euer Verständnis.</p>
     <p>Wir freuen uns aber umso mehr darauf, euch an diesem besonderen Tag dabei zu haben!</p>
 
-    <h3>Hier findet ihr alle wichtigen Informationen:</h3>
+    <hr>
+
+    <h2>Hier findet ihr alle wichtigen Informationen:</h2>
+
     <p><strong>Ort:</strong><br>
-    In Neggio im Haus der Urgrossmutter von Iara (daher die begrenzten Platzverhältnisse).<br>
-    Adresse: Via Giuseppe Soldati 15, 6991 Neggio<br>
+    In Neggio im Haus der Urgrossmutter von Iara (daher die begrenzten Platzverhältnisse).</p>
+    <p>Adresse: Via Giuseppe Soldati 15, 6991 Neggio<br>
     <a href="https://maps.app.goo.gl/qev6CnhPAGPG5B877" target="_blank" style="color: #fff; text-decoration: underline;">Google Maps Link</a></p>
+
+    <hr>
 
     <p><strong>Datum & Zeit:</strong><br>
     Samstag, 14.06.2025 ab circa 13:30 Uhr bis die Sterne müde werden...</p>
 
+    <hr>
+
     <p><strong>Programm:</strong><br>
-    Der einzige Fixpunkt ist der Apéro (ab ca. 18:00Uhr) mit anschliessendem Nachtessen im Garten...</p>
+        Der einzige Fixpunkt ist der Apéro (ab ca. 18:00 Uhr) mit anschliessendem Nachtessen im Garten. </p>
+
+        <p>Zuvor kann gebadet (im See), spaziert, Vögel beobachtet, Spiele gespielt, rumgelegen werden oder auf was wir dann gerade Lust haben. </p>
+
+        <p>Wir würden uns freuen auch den Sonntag mit euch zu verbringen (bis ca. Sonntagnachmittag), daher möchten wir euch folgende Möglichkeiten für eine Übernachtung in der Region unterbreiten.
+        </p>
+
+    <hr>
 
     <p><strong>Unterkunft:</strong><br>
-    In der Region gibt es einige Hotels und Bed&Breakfasts, bspw. in Agno oder Caslano...</p>
+
+        In der Region gibt es einige Hotels und Bed&Breakfasts, bspw. in Agno oder Caslano. Diese wären dann sogar in möglicher Gehdistanz (ca. 20-45min). Lugano bietet sich für eine Unterkunft ebenfalls an, ist dann jedoch nicht mehr in angenehmer Gehdistanz (ca. 1h30min).
+    </p>
+    <p>
+        Ihr dürft selbstverständlich auch am gleichen Tag an- und wieder abreisen.
+    </p>
+
+    <hr>
 
     <p><strong>Anreise (von Zürich):</strong><br>
-    ÖV: ca. 2h30min, Auto: ca. 2h45min, Fahrrad: ca. 18h, Zu Fuss: ca. 90h</p>
+    ÖV (von Zürich HB): ca. 2h30min (Verbindung mit Postauto fast direkt vor das Haus, von Postautostation ca. 2 Gehminuten bis zum Haus) oder ca. 2h45min inkl. ca. 25min Fussmarsch vom Bahnhof Magliaso Paese hoch nach Neggio (gut machbar, aber steil!).</p>
+    <p>Auto: ca. 2h45min (ohne Stau), einige Parkplätze sind vor dem Haus vorhanden, ansonsten im Dorf (wenige Minuten Fussweg)</p>
+    <p>Fahrrad: ca. 18h</p>
+    <p>Zu Fuss: ca. 90h</p>
+
+    <hr>
 
     <p><strong>Mitnehmen:</strong><br>
-    Badesachen und was ihr sonst so braucht für ein gemütliches Wochenende im Tessin</p>
+    Badesachen und was ihr sonst so braucht für ein gemütliches Wochenende im Tessin.</p>
+
+    <hr>
 
     <p><strong>Dresscode:</strong><br>
     Sommerlich léger (bitte keine Funktionskleider)</p>
+
+    <hr>
 
     <div class="form-section">
       <h3>Angaben der Gäste:</h3>
@@ -135,7 +168,7 @@
           <option value="nicht-vegetarisch">Nicht-vegetarisch</option>
         </select>
 
-        <label for="anreise">Angedachte Anreise-Art</label>
+        <label for="anreise">Angedachte Anreise-Art (Auto, ÖV, etc.)</label>
         <input type="text" id="anreise" name="anreise" required>
 
         <label for="sonntag">Sonntag dabei?</label>
@@ -149,11 +182,10 @@
       </form>
     </div>
 
-    <img class="image-portrait" src="placeholder-portrait.jpg" alt="Das Paar">
   </main>
 
   <footer>
-    <p>Wir freuen uns auf euch! ♥</p>
+    <img class="image-portrait" src="images/iara&diego.jpg" alt="Iara & Diego">
   </footer>
 </body>
 </html>
